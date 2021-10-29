@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario: Radio</title>
+</head>
+<body>
+    <div id="aplicacion">
+        <p>
+          <input type="radio" value="Sin estudios" v-model="estudios" id="sinestudios">
+          <label for="sinestudios">Sin estudios</label>
+        </p>        
+        <p>
+          <input type="radio" value="Primarios" v-model="estudios" id="primarios">
+          <label for="primarios">Primarios</label>
+        </p>
+        <p>
+          <input type="radio" value="Secundarios" v-model="estudios" id="secundarios">
+          <label for="secundarios">Secundarios</label>
+        </p>
+        <p>
+          <input checked type="radio" value="universitarios" v-model="estudios" id="universitarios">
+          <label for="universitarios">Universitarios</label>
+        </p>
+        <p>Sus estudios son:{{estudios}}</p>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script src="04.js"></script>
+</body>
+</html>

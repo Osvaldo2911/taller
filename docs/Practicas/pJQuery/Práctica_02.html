@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>animación cubo</title>
+  <style>
+  div {
+    position: absolute;
+    background-color: #abc;
+    left: 50px;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("#div1").fadeIn();
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn(3000);
+      });
+    });
+    </script>
+</head>
+<body>
+ 
+<button id="left">Izquierda</button>
+<button id="right">Derecha</button>
+<div class="block"></div>
+ 
+<script>
+$( "#right" ).click(function() {
+  $( ".block" ).animate({ "left": "+=50px" }, "slow" );
+});
+ 
+$( "#left" ).click(function(){
+  $( ".block" ).animate({ "left": "-=50px" }, "slow" );
+});
+</script>
+ 
+</body>
+</html>

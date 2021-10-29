@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Agregue React en un minuto </title>
+  </head>
+  <body>
+
+    <h2> Agregar React en un minuto </h2>
+    <p> Esta página demuestra el uso de React sin herramientas de compilación. </p>
+    <p> React se carga como una etiqueta de secuencia de comandos. </p> 
+
+    <p>
+      Este es el primer comentario.
+      <!-- Pondremos nuestro componente React dentro de este div. -->
+      <div class="like_button_container" data-commentid="1"></div>
+    </p>
+
+    <p>
+      Este es el segundo comentario. 
+      <!-- Pondremos nuestro componente React dentro de este div. -->
+      <div class="like_button_container" data-commentid="2"></div>
+    </p>
+
+    <p>
+      Este es el tercer comentario. 
+      <!-- Pondremos nuestra componente React dentro de esta div. -->
+      <div class="like_button_container" data-commentid="3"></div>
+    </p>
+
+    <!-- Cargando React. -->
+    <!-- Nota: al implementar, reemplace "development.js" con "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Cargamos nuestro componente React. -->
+    <script src="like_button.js"></script>
+
+  </body>
+</html>

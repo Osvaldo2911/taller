@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Añadir react</title>
+  </head>
+  <body>
+
+    <h2>Añadir React fácil</h2>
+    <p>Esta pagina nos demiestra el uso de react sin herramientas de construcción</p>
+    <p>React se carga como una etiqueta de script.</p>
+
+    <!-- We will put our React component inside this div. -->
+    <div id="like_button_container"></div>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="like_button.js"></script>
+
+  </body>
+</html>
